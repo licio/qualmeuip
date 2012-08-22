@@ -1,0 +1,12 @@
+application: qualmeuip
+version: 1
+runtime: python
+api_version: 1
+
+handlers:
+- url: /static/images
+  static_dir: static/images
+
+- url: /.*
+  script: qualmeuip.py
+
